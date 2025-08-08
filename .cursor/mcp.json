@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "host-info": {
+      "command": "uv",
+      "args": ["run", "python", "main.py"],
+      "cwd": "E:\\code\\mcp-servers",
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "MCP_TRANSPORT": "stdio"
+      }
+    },
+    "mcp-shot-info": {
+      "url": "http://localhost:8080/mcp"
+    }
+  }
+}

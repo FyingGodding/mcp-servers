@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  mcp-host-info:
+    build: .
+    image: mcp-host-info:latest
+    container_name: mcp-host-info
+    ports:
+      - "8080:8000"
+    environment:
+      - MCP_TRANSPORT=http
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8080
+      - MCP_PATH=/mcp
+      - MCP_LOG_LEVEL=info
+    restart: unless-stopped

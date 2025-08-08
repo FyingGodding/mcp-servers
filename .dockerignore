@@ -1,0 +1,16 @@
+.git
+__pycache__
+.pytest_cache
+.mypy_cache
+.venv
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.idea
+.cursor
+uv.lock
+*.log
+build/
+dist/
+node_modules/
